@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.main-container{
+    box-shadow: rgba(0, 0, 0, .24) 0px 3px 8px;
+    border-radius: .5rem;
+    max-width: 800px;
+    height: 450px;
+    background: url(../images/bg-pattern-desktop.svg);
+    display: flex;
+
+}
+
+
+.right-side{
+    width: 700px;
+}
+
+.right-side img{
+    width:100%;
+    height: 100%;
+}
+
+.left-side img{
+    width: 80px;
+    height: auto;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-bottom: 3.5rem;
+    margin-right: 5rem;
+}
+
+span{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+    letter-spacing: .9rem;
+    margin-right: 5rem;
+}
+
+h1{
+    margin-left: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .9rem;
+    line-height: 2.2rem;
+    margin-right: 5rem;
+    display: inline-block;
+    width: 200px;
+    
+}
+
+p{
+    margin: 1rem 1rem 2rem 5rem;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3rem;
+    display: inline-block;
+    width: 330px;
+    color: hsl(0, 36%, 70%);
+}
+
+.email{
+    position: relative;
+}
+
+input{
+    margin-left: 5rem;
+    width: 290px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid hsl(0, 36%, 70%);
+    padding-left: 1.4rem;
+    background-color: hsl(0, 100%, 99%);
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+}
+
+#exclamation{
+    position: absolute;
+    transform: translate(-770%,-100%);
+    width: 20px;
+    display: none;
+}
+
+input::placeholder{
+    color: hsl(0, 36%, 70%, 50%);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+.btn{
+    width: 70px;
+    height: 41px;
+    top: 50%;
+    border: none;
+    background-image: linear-gradient(to right,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+    border-radius: 20px;
+    padding: 5px;
+    transform: translateX(-61%);
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-image: linear-gradient(to right,hsl(0, 100%, 90%), hsl(0, 80%, 86%));
+}
+
+.msg-validation{
+    margin-top: 3px;
+    margin-left: 6.4rem;
+    color: hsl(0, 93%, 73%);
+}
+
+.hidden{
+    display: none;
+}
+
+@media(max-width: 375px){
+    .main-container{
+        flex-direction: column-reverse;
+
+    }
+}
